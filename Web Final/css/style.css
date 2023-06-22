@@ -1,0 +1,157 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    color: blue;
+    padding: 80px 10px 30px 10px;
+    text-align: center;
+    font-size: 46px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.menu_nav {
+    font-size: 18px;
+    display: inline-block;
+    color: blue;
+    text-decoration: none;
+}
+
+.menu_nav:hover {
+    
+    color: blue;
+    background-color: red;
+}
+
+.nav {
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 255, 0), rgb(145, 255, 0));
+    box-shadow: 1px 1px 5px #830610;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+}
+
+.imagen {
+    width: 750px;
+    height: 350px;
+}
+
+iframe {
+    width: 750px;
+    height: 350px;
+}
+
+
+.contenido {
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.logowh, .logofc, .logoit, .logotw, .logoyt{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50px;
+    
+    
+}
+
+/*css del desplegable de contactos*/
+.cont_des {
+    display: inline-block;
+    position: relative;
+    width: 90px;
+}
+
+.cont_desplegable {
+    margin-top: 10;
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    background-color: white;
+}
+
+.cont_des:hover .cont_desplegable {
+    display: block;
+    color: blue;
+    /* background-color: red; */
+}
+
+.cont_desplegable a {
+    display: block;
+    color: #000000;
+    padding: 15px;
+    text-decoration: none;
+
+}
+
+.cont_desplegable a:hover {
+    color: #FFFFFF;
+    background-color: #00A4bd;
+}
+
+
+.footer {
+    box-shadow: 1px 1px 4px #830610;
+   
+    background: linear-gradient(to top, lime, 20%, cyan);
+}
+.byc{
+    display: inline-block;
+    justify-items: center;
+    
+}
+
+.pie_pagina{
+    display: flex;
+    justify-content: end;
+    
+}
+
+/*responsive con media @media Menu de navegacion*/
+
+@media (max-width: 600px) {
+    .nav {
+       
+        display: block;
+    }
+
+    .menu_nav {
+        padding: 5px;
+        font-size: 13px;
+    }
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 11px;
+    }
+    iframe {
+        width: 450px;
+        height: 250px;
+    }
+
+    .imagen {
+        width: 450px;
+        height: 150px;
+    }
+
+}
+
